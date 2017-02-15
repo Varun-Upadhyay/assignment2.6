@@ -1,0 +1,82 @@
+Ans 1:-
+      import java.util.*;     //import package
+     class Acad    
+     {             
+         public static void main(String []args)
+         {
+        	 Scanner sc = new Scanner(System.in);
+        	 int a = sc.nextInt();                //input number
+        	 int b = sc.nextInt();
+        	 int []e = new int[Math.abs(b-a)];    //array declaration
+        	 int []o = new int[Math.abs(b-a)];
+        	 int e1=0,o1=0;
+        	 for(int i=a+1;i<b;i++)
+        	 {
+        		 if(i%2==0)          //condition for checking even
+        		 {
+        			 e[e1]=i;
+        			 e1++;
+        		 }
+        		 else              //else condition for odd checking
+        		 {
+        			 o[o1]=i;
+        			 o1++;
+        		 }
+        	 }
+        	 System.out.println("Even");     //print even number
+        	 for(int i=0;i<e1;i++)
+        	 {
+        		 System.out.println(e[i]);
+        	 }
+        	 System.out.println("odd");        //print odd number
+        	 for(int i=0;i<o1;i++)
+        	 {
+        		 System.out.println(o[i]);
+        	 }
+         }
+       }          
+       
+       Ans 2 :- 
+            import java.util.*;     //import package
+     class Acad    
+     {             
+         public static void main(String []args)
+         {
+        	 Scanner sc = new Scanner(System.in);
+        	 int a = sc.nextInt();                //input number
+        	 for(int i=1;i<=10;i++)      //for loop
+        	 {
+        		 System.out.println(a+"*"+i+" = "+(a*i));  //print
+        	 }
+         }
+       }          
+       
+       Ans 3:-
+           import java.util.*;     //import package
+     class Acad    
+     {     
+    	 public void sum(int a,int b)     // method sum 1
+    	 {
+    		 int sum = a+b;
+    		 System.out.println("method with two argument call");
+    		 System.out.println(sum);
+    	 }
+    	 public void sum(int a,int b,int c)       // 2 method overloading with same name and different signature
+    	 {
+    		 int sum = a+b+c;
+    		 System.out.println("method with three argument call");
+    		 System.out.println(sum);
+    	 }
+         public static void main(String []args)
+         {
+        	 Scanner sc = new Scanner(System.in);
+        	int x = sc.nextInt();        //input numbers 
+        	int y = sc.nextInt();
+        	int z = sc.nextInt();
+        	Acad ac = new Acad();   //create object of class
+        	ac.sum(x, y);         //calling method 1
+        	ac.sum(x,y,z);       // calling method 2
+        	
+        	
+       }   
+     }
